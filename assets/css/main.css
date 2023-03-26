@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nuxt-link-exact-active {
+  @apply text-blue-500;
+}
+
+.bold {
+  font-weight: bold;
+}
