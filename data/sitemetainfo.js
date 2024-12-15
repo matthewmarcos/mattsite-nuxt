@@ -5,7 +5,7 @@ const siteMetadata = {
   position: "Solutions Architect",
   location: "Manila, Philippines",
   headerTitle: "M. Marcos",
-  slogan: "Let's Chart Your Course to Data Treasure",
+  slogan: "Innovating with Insight, Leading with Impact",
   description:
     "A tech enthusiast & self taught learner. Love to talk the way of tech.",
   language: "en-us",
