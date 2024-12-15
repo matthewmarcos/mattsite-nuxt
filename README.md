@@ -19,11 +19,13 @@ A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated cont
 ```bash
 git clone https://github.com/your-username/your-repo.git
 ```
+
 2. Navigate to the project directory:
 
 ```bash
 cd your-repo
 ```
+
 3. Install dependencies:
 
 ```bash
@@ -37,7 +39,6 @@ npm run dev
 ```
 
 5. Access the blog at `http://localhost:3000`.
-
 
 ### Steps for committing changes
 
@@ -82,5 +83,3 @@ author: Your Name
 draft: false
 ---
 ```
-
-
