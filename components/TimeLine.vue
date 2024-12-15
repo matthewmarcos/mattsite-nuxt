@@ -40,7 +40,7 @@
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Enterprise Solutions Engineer at Thinking Machines
+          Senior Data Engineer, Data Architect, Telco Industry Lead at Thinking Machines
         </h3>
         <time
           class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
@@ -48,9 +48,9 @@
         >
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">
             <ul class="list-disc ml-5">
-              <li>Led major data engineering projects for top-tier clients, boosting company revenues significantly.</li>
-              <li>Established repeatable solutions for diverse industries and played a pivotal role in high-stakes client negotiations.</li>
-              <li>Enhanced client relationships and business development strategies.</li>
+              <li>Led major data engineering projects for top-tier clients that brought ~$4,000,000 in annual revenue.</li>
+              <li>Designed repeatable solutions for the telco industry and played a pivotal role in high-stakes client negotiations.</li>
+              <li>Built client relationships and business development strategies.</li>
             </ul>
         </p>
       </li>
@@ -96,8 +96,8 @@
         >
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">
             <ul class="list-disc ml-5">
-            <li>Optimized data systems to enhance email tracking capabilities, reducing processing time significantly.</li>
-            <li>Managed in-house task orchestration and contributed to data-driven decision making.</li>
+            <li>Optimized data systems to enhance email tracking capabilities, reducing disk-based queries in Amazon Redshift.</li>
+            <li>Managed in-house task orchestration system.</li>
             </ul>
         </p>
       </li>

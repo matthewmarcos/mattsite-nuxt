@@ -25,20 +25,20 @@
 </template>
 
 <script>
-import menu from "../data/menu";
+  import menu from "../data/menu";
 
-export default {
-  name: "TheHeader",
-  data() {
-    return {
-      navLinks: menu,
-    };
-  },
-};
+  export default {
+    name: "TheHeader",
+    data() {
+      return {
+        navLinks: menu,
+      };
+    },
+  };
 </script>
 
 <style>
-.nuxt-link-exact-active {
-  @apply text-indigo-600;
-}
+  .nuxt-link-exact-active {
+    @apply text-indigo-600;
+  }
 </style>

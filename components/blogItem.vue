@@ -1,11 +1,7 @@
 <template>
   <div>
-    <article
-      class="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]"
-    >
-      <h3
-        class="mb-4 text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200"
-      >
+    <article class="relative flex flex-col max-w-3xl lg:ml-auto xl:max-w-none xl:w-[50rem]">
+      <h3 class="mb-4 text-4xl text-slate-700 tracking-tight font-bold dark:text-slate-200">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: postSlug } }">
           {{ postTitle }}</NuxtLink
         >
@@ -36,23 +32,23 @@
 </template>
 
 <script>
-export default {
-  props: ["title", "description", "date", "slug"],
-  data() {
-    return {
-      postTitle: this.title,
-      postDescription: this.description,
-      postSlug: this.slug,
-      postDate: this.date,
-    };
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("en", options);
+  export default {
+    props: ["title", "description", "date", "slug"],
+    data() {
+      return {
+        postTitle: this.title,
+        postDescription: this.description,
+        postSlug: this.slug,
+        postDate: this.date,
+      };
     },
-  },
-};
+    methods: {
+      formatDate(date) {
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        return new Date(date).toLocaleDateString("en", options);
+      },
+    },
+  };
 </script>
 
 <style></style>

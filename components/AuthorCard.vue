@@ -5,12 +5,10 @@
         :src="siteMetadata.author_image"
         loading="lazy"
         alt="me"
-        class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full"
+        class="shadow-xl md:h-60 md:w-60 h-40 w-40 rounded-full object-cover"
       />
       <div class="mb-2 mx-7 mt-4 justify-center items-center">
-        <h1
-          class="md:text-3xl text-2xl text-gray-800 font-bold dark:text-blue-100"
-        >
+        <h1 class="md:text-3xl text-2xl text-gray-800 font-bold dark:text-blue-100">
           {{ siteMetadata.author }}
         </h1>
         <div class="md:text-lg text-gray-600 dark:text-blue-100">
@@ -43,16 +41,16 @@
 </template>
 
 <script>
-import Mail from "../assets/icon/mail.svg?inline";
-import Glob from "../assets/icon/glob.svg?inline";
-import Github from "../assets/icon/github_new.svg?inline";
-import siteMetaInfo from "@/data/sitemetainfo";
-export default {
-  components: { Mail, Glob, Github },
-  data: () => {
-    return {
-      siteMetadata: siteMetaInfo,
-    };
-  },
-};
+  import Mail from "../assets/icon/mail.svg?inline";
+  import Glob from "../assets/icon/glob.svg?inline";
+  import Github from "../assets/icon/github_new.svg?inline";
+  import siteMetaInfo from "@/data/sitemetainfo";
+  export default {
+    components: { Mail, Glob, Github },
+    data: () => {
+      return {
+        siteMetadata: siteMetaInfo,
+      };
+    },
+  };
 </script>

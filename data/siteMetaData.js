@@ -6,8 +6,7 @@ const siteMetadata = {
   location: "Manila, Philippines",
   headerTitle: "M. Marcos",
   slogan: "Innovating with Insight, Leading with Impact",
-  description:
-    "A tech enthusiast & self taught learner. Love to talk the way of tech.",
+  description: "A tech enthusiast & self taught learner. Love to talk the way of tech.",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://matthewmarcos.com",
