@@ -17,7 +17,7 @@ def create_directory(directory):
 
 def main():
     # Set the directory where logos will be saved
-    SAVE_DIR = "tech_logos"
+    SAVE_DIR = "assets/tech_logos"
     create_directory(SAVE_DIR)
 
     # Dictionary of technology names and their Simple Icons slugs
