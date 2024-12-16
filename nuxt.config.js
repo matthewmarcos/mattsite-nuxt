@@ -67,5 +67,21 @@ export default {
         autoprefixer: {},
       },
     },
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.ico$/,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
+      });
+    },
+  },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      // Remove blog routes temporarily
+      return routes.filter((route) => !route.path.startsWith("/blog"));
+    },
   },
 };

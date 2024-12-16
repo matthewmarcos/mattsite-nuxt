@@ -2,12 +2,11 @@ const siteMetadata = {
   title: "Matthew Marcos | Data, Web and Solutions Engineering",
   author: "Matthew Marcos",
   author_image: "/author.jpeg",
-  position: "Solutions Architect `@ Thinking Machines Data Science",
+  position: "Senior Data Engineer @ Zoomo",
   location: "Manila, Philippines",
   headerTitle: "M. Marcos",
-  slogan: "Let's Chart Your Course to Data Treasure",
-  description:
-    "A tech enthusiast & self taught learner. Love to talk the way of tech.",
+  slogan: "Innovating with Insight, Leading with Impact",
+  description: "A tech enthusiast & self taught learner. Love to talk the way of tech.",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://matthewmarcos.com",

@@ -15,8 +15,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 :href="projectHref"
-                ><span class="sr-only"></span
-                ><img class="w-6 h-6" src="~assets/icon/external.svg"
+                ><span class="sr-only"></span><img class="w-6 h-6" src="~assets/icon/external.svg"
               /></a>
             </div>
             <div class="mx-1">
@@ -48,24 +47,24 @@
 </template>
 
 <script>
-import Folder from "../assets/icon/folder.svg?inline";
-import External from "../assets/icon/external.svg?inline";
-import Github from "../assets/icon/github.svg?inline";
-export default {
-  props: ["title", "description", "href", "github", "tech1", "tech2", "tech3"],
-  components: { Folder, External, Github },
-  data() {
-    return {
-      projectTitle: this.title,
-      projectDescription: this.description,
-      projectHref: this.href,
-      projectGithub: this.github,
-      projectTech1: this.tech1,
-      projectTech2: this.tech2,
-      ProjectTech3: this.tech3,
-    };
-  },
-};
+  import Folder from "../assets/icon/folder.svg?inline";
+  import External from "../assets/icon/external.svg?inline";
+  import Github from "../assets/icon/github.svg?inline";
+  export default {
+    props: ["title", "description", "href", "github", "tech1", "tech2", "tech3"],
+    components: { Folder, External, Github },
+    data() {
+      return {
+        projectTitle: this.title,
+        projectDescription: this.description,
+        projectHref: this.href,
+        projectGithub: this.github,
+        projectTech1: this.tech1,
+        projectTech2: this.tech2,
+        ProjectTech3: this.tech3,
+      };
+    },
+  };
 </script>
 
 <style></style>
