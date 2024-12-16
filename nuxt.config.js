@@ -67,5 +67,14 @@ export default {
         autoprefixer: {},
       },
     },
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.ico$/,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
+      });
+    },
   },
 };

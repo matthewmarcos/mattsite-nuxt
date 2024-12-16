@@ -1,6 +1,24 @@
 # AI Tinkerer's Blog
 
-A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated content and tech explorations.
+A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated content and tech explorations. This blog serves as a platform for sharing insights about AI, data engineering, and tech experiments.
+
+## Features
+
+- 🎨 Modern UI with Tailwind CSS
+- 📝 Markdown-based blog posts
+- 🌙 Dark mode support
+- 🖼️ Image optimization with Nuxt Image
+- 🔍 SEO-friendly
+- ⚡ Fast page loads with static generation
+- 🤖 AI-generated content integration
+
+## Tech Stack
+
+- **Frontend**: Nuxt.js, Vue 2, Tailwind CSS
+- **Content**: Nuxt Content module
+- **Styling**: Tailwind CSS with Typography plugin
+- **Deployment**: Netlify
+- **Tools**: Python scripts for asset management
 
 ## Prerequisites
 
