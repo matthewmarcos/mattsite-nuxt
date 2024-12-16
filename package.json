@@ -8,7 +8,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,vue,css,scss,json,md}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,vue,css,scss,json,md}\""
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,vue,css,scss,json,md}\"",
+    "deploy": "nuxt generate && netlify deploy",
+    "deploy:prod": "nuxt generate && netlify deploy --prod"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
