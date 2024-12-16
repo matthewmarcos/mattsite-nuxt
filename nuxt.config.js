@@ -77,4 +77,11 @@ export default {
       });
     },
   },
+
+  router: {
+    extendRoutes(routes, resolve) {
+      // Remove blog routes temporarily
+      return routes.filter((route) => !route.path.startsWith("/blog"));
+    },
+  },
 };

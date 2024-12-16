@@ -2,7 +2,7 @@
   <!-- Section 1 -->
   <section class="w-full px-6 pb-12 antialiased bg-white">
     <div class="mx-auto max-w-8xl">
-      <TheHeader />
+      <TheHeader v-if="!isHomePage" />
       <Nuxt />
       <TheFooter />
     </div>
@@ -17,6 +17,11 @@
     components: {
       TheHeader,
       TheFooter,
+    },
+    computed: {
+      isHomePage() {
+        return this.$route.path === "/";
+      },
     },
   };
 </script>
