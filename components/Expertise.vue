@@ -9,67 +9,47 @@
           <Bigquery class="h-5 w-5"></Bigquery>
         </li>
         <li class="flex items-center">
-          <ApacheSpark class="h-5 w-5"></ApacheSpark>
+          <Python class="h-5 w-5"></Python>
         </li>
         <li class="flex items-center">
-          <Python class="h-5 w-5"></Python>
+          <Snowflake class="h-5 w-5"></Snowflake>
+        </li>
+        <li class="flex items-center">
+          <Airflow class="h-5 w-5"></Airflow>
+        </li>
+        <li class="flex items-center">
+          <Dagster class="h-5 w-5"></Dagster>
         </li>
         <li class="flex items-center">
           <Postgres class="h-5 w-5"></Postgres>
         </li>
-      </ul>
-    </div>
-    <div class="mt-2">
-      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-        Software Engineering
-      </h2>
-
-      <ul class="flex flex-wrap gap-4 items-center">
         <li class="flex items-center">
-          <Bootstrap class="h-5 w-5"></Bootstrap>
-        </li>
-        <li class="flex items-center">
-          <TailwindCss class="h-5 w-5"></TailwindCss>
-        </li>
-        <li class="flex items-center">
-          <Javascript class="h-5 w-5"></Javascript>
-        </li>
-        <li class="flex items-center">
-          <Node class="h-5 w-5"></Node>
-        </li>
-        <li class="flex items-center">
-          <Html class="h-5 w-5"></Html>
-        </li>
-        <li class="flex items-center">
-          <Css class="h-5 w-5"></Css>
-        </li>
-        <li class="flex items-center">
-          <Vuejs class="h-5 w-5"></Vuejs>
-        </li>
-        <li class="flex items-center">
-          <Nuxt class="h-5 w-5"></Nuxt>
+          <Dbt class="h-5 w-5"></Dbt>
         </li>
       </ul>
     </div>
     <div class="mt-2">
       <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
-        Platform and Tools
+        Platforms and Tools
       </h2>
       <ul class="flex flex-wrap gap-4 items-center">
         <li class="flex items-center">
-          <Docker class="h-5 w-5"></Docker>
-        </li>
-        <li class="flex items-center">
-          <Helm class="h-5 w-5"></Helm>
+          <Terraform class="h-5 w-5"></Terraform>
         </li>
         <li class="flex items-center">
           <Kubernetes class="h-5 w-5"></Kubernetes>
         </li>
         <li class="flex items-center">
-          <CloudFunctions class="h-5 w-5"></CloudFunctions>
+          <Docker class="h-5 w-5"></Docker>
         </li>
         <li class="flex items-center">
-          <Terraform class="h-5 w-5"></Terraform>
+          <CloudRun class="h-5 w-5"></CloudRun>
+        </li>
+        <li class="flex items-center">
+          <Gcs class="h-5 w-5"></Gcs>
+        </li>
+        <li class="flex items-center">
+          <Helm class="h-5 w-5"></Helm>
         </li>
       </ul>
     </div>
@@ -77,43 +57,35 @@
 </template>
 
 <script>
-  import Javascript from "../assets/devicon/javascript.svg?inline";
-  import Html from "../assets/devicon/html.svg?inline";
-  import Css from "../assets/devicon/css.svg?inline";
-  import Vuejs from "../assets/devicon/vuejs.svg?inline";
-  import TailwindCss from "../assets/devicon/tailwindcss.svg?inline";
-  import Nuxt from "../assets/devicon/nuxt.svg?inline";
-  import Bootstrap from "../assets/devicon/bootstrap.svg?inline";
   import Bigquery from "../assets/tech_logos/bigquery.svg?inline";
-  import Node from "../assets/devicon/node.svg?inline";
-  import ApacheSpark from "../assets/tech_logos/apache-spark.svg?inline";
   import Python from "../assets/tech_logos/python.svg?inline";
+  import Snowflake from "../assets/tech_logos/snowflake.svg?inline";
+  import Airflow from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with airflow.svg
+  import Dagster from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dagster.svg
   import Postgres from "../assets/tech_logos/postgres.svg?inline";
-  import Docker from "../assets/tech_logos/docker.svg?inline";
-  import Helm from "../assets/tech_logos/helm.svg?inline";
-  import Kubernetes from "../assets/tech_logos/kubernetes.svg?inline";
-  import CloudFunctions from "../assets/tech_logos/google-cloud-functions.svg?inline";
+  import Dbt from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dbt.svg
   import Terraform from "../assets/tech_logos/terraform.svg?inline";
+  import Kubernetes from "../assets/tech_logos/kubernetes.svg?inline";
+  import Docker from "../assets/tech_logos/docker.svg?inline";
+  import CloudRun from "../assets/tech_logos/gcp.svg?inline"; // Placeholder - replace with cloud-run.svg
+  import Gcs from "../assets/tech_logos/gcp.svg?inline"; // Placeholder - replace with gcs.svg
+  import Helm from "../assets/tech_logos/helm.svg?inline";
 
   export default {
     components: {
-      Javascript,
-      Html,
-      Css,
-      Bootstrap,
-      Vuejs,
-      TailwindCss,
-      Nuxt,
       Bigquery,
-      Node,
-      ApacheSpark,
       Python,
+      Snowflake,
+      Airflow,
+      Dagster,
       Postgres,
-      Docker,
-      Helm,
-      Kubernetes,
-      CloudFunctions,
+      Dbt,
       Terraform,
+      Kubernetes,
+      Docker,
+      CloudRun,
+      Gcs,
+      Helm,
     },
   };
 </script>

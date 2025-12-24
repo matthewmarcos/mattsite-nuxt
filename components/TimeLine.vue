@@ -22,6 +22,11 @@
           >
         </h3>
 
+        <!-- Company Summary -->
+        <p v-if="experience.summary" class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+          {{ experience.summary }}
+        </p>
+
         <!-- Multiple roles at same company -->
         <template v-if="experience.roles.length > 1">
           <div v-for="(role, index) in experience.roles" :key="index" class="mb-6">
@@ -36,6 +41,9 @@
             <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               {{ formatPeriod(role.startDate, role.endDate) }}
             </time>
+            <p v-if="role.summary" class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+              {{ role.summary }}
+            </p>
             <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
               <ul class="list-disc ml-5">
                 <li v-for="(achievement, idx) in role.achievements" :key="idx">
@@ -59,6 +67,9 @@
           <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             {{ formatPeriod(experience.roles[0].startDate, experience.roles[0].endDate) }}
           </time>
+          <p v-if="experience.roles[0].summary" class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+            {{ experience.roles[0].summary }}
+          </p>
           <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
             <ul class="list-disc ml-5">
               <li v-for="(achievement, idx) in experience.roles[0].achievements" :key="idx">
