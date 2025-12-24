@@ -18,7 +18,6 @@ A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated cont
 - **Content**: Nuxt Content module
 - **Styling**: Tailwind CSS with Typography plugin
 - **Deployment**: Netlify
-- **Tools**: Python scripts for asset management
 
 ## Prerequisites
 

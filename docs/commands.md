@@ -19,8 +19,3 @@
 - `make build` - `npm run build`.
 - `make clean` - remove `node_modules`, `.nuxt`, `dist`, `.cache`.
 
-## Python helpers (`tools/`)
-- `python tools/download_icons.py` - fetch tech logos into `assets/tech_logos`.
-- `python tools/download_favicons.py` - fetch favicons into `assets/job_logos`.
-- `python tools/convert_ico_to_png.py` - convert icons as needed.
-
