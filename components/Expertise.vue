@@ -60,7 +60,7 @@
   import Bigquery from "../assets/tech_logos/bigquery.svg?inline";
   import Python from "../assets/tech_logos/python.svg?inline";
   import Snowflake from "../assets/tech_logos/snowflake.svg?inline";
-  import Airflow from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with airflow.svg
+  import Airflow from "../assets/tech_logos/airflow.svg?inline";
   import Dagster from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dagster.svg
   import Postgres from "../assets/tech_logos/postgres.svg?inline";
   import Dbt from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dbt.svg
