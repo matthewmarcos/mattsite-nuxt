@@ -1,16 +1,14 @@
-# AI Tinkerer's Blog
+# matthewmarcos.com
 
-A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated content and tech explorations. This blog serves as a platform for sharing insights about AI, data engineering, and tech experiments.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2fb944e9-c6ee-4749-a8ff-f7a326bccbe0/deploy-status)](https://app.netlify.com/projects/mattsite/deploys)
+
+Personal site and blog. Nuxt 2 + Tailwind, statically generated, deployed to Netlify.
 
 ## Features
 
-- 🎨 Modern UI with Tailwind CSS
-- 📝 Markdown-based blog posts
-- 🌙 Dark mode support
-- 🖼️ Image optimization with Nuxt Image
-- 🔍 SEO-friendly
-- ⚡ Fast page loads with static generation
-- 🤖 AI-generated content integration
+- Markdown-based posts via Nuxt Content
+- Dark mode
+- Static generation
 
 ## Tech Stack
 
@@ -18,15 +16,12 @@ A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated cont
 - **Content**: Nuxt Content module
 - **Styling**: Tailwind CSS with Typography plugin
 - **Deployment**: Netlify
-- **Tools**: Python scripts for asset management
 
 ## Prerequisites
 
-- Node.js (v14 or later)
-- npm or yarn
-- Python 3.8+
-- Poetry (Python package manager)
-- Netlify CLI (optional, for deployment)
+- Node.js 18 (see `.nvmrc`) — Nuxt 2 / webpack 4 do not build on Node 20+
+- npm
+- Netlify CLI (for deployment — this site is deployed manually, not via git)
 
 ## Setup Instructions
 
