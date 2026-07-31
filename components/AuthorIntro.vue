@@ -9,14 +9,9 @@
     </h2>
     <div class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify space-y-4">
       <p>
-        Senior Data and AI Engineer with 8 years of experience designing and building scalable data platforms
-        in consulting environments and product companies. I specialize in cost optimization, system
-        migrations, and platform modernization initiatives.
-      </p>
-      <p>
-        My technical expertise spans Python, Airflow, dbt, BigQuery, AWS/GCP, and Terraform. I've led
-        company-wide implementations, reduced infrastructure costs by 50%, and executed zero-downtime
-        migrations across international markets. Currently seeking Data Engineering roles in Germany.
+        I build data platforms — pipelines, warehouses, and the unglamorous plumbing underneath
+        them. Lately most of that work runs through AI tooling, which is what I'll be writing about
+        here.
       </p>
     </div>
   </div>

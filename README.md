@@ -1,18 +1,14 @@
-# AI Tinkerer's Blog
+# matthewmarcos.com
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2fb944e9-c6ee-4749-a8ff-f7a326bccbe0/deploy-status)](https://app.netlify.com/projects/mattsite/deploys)
 
-A personal blog built with Nuxt.js and Tailwind CSS, featuring AI-generated content and tech explorations. This blog serves as a platform for sharing insights about AI, data engineering, and tech experiments.
+Personal site and blog. Nuxt 2 + Tailwind, statically generated, deployed to Netlify.
 
 ## Features
 
-- 🎨 Modern UI with Tailwind CSS
-- 📝 Markdown-based blog posts
-- 🌙 Dark mode support
-- 🖼️ Image optimization with Nuxt Image
-- 🔍 SEO-friendly
-- ⚡ Fast page loads with static generation
-- 🤖 AI-generated content integration
+- Markdown-based posts via Nuxt Content
+- Dark mode
+- Static generation
 
 ## Tech Stack
 

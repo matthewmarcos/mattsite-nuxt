@@ -16,21 +16,26 @@
         <h3 class="flex items-center mb-3 text-lg font-semibold text-gray-900 dark:text-white">
           {{ experience.company }}
           <span
-            v-if="experience.roles.some(role => role.isCurrent)"
+            v-if="experience.roles.some((role) => role.isCurrent)"
             class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3"
             >Current</span
           >
         </h3>
 
         <!-- Company Summary -->
-        <p v-if="experience.summary" class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+        <p
+          v-if="experience.summary"
+          class="mb-4 text-base font-normal text-gray-600 dark:text-gray-400 italic"
+        >
           {{ experience.summary }}
         </p>
 
         <!-- Multiple roles at same company -->
         <template v-if="experience.roles.length > 1">
           <div v-for="(role, index) in experience.roles" :key="index" class="mb-6">
-            <h4 class="flex items-center mb-1 text-base font-medium text-gray-700 dark:text-gray-300">
+            <h4
+              class="flex items-center mb-1 text-base font-medium text-gray-700 dark:text-gray-300"
+            >
               {{ role.title }}
               <span
                 v-if="role.isCurrent"
@@ -38,10 +43,15 @@
                 >Current</span
               >
             </h4>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time
+              class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+            >
               {{ formatPeriod(role.startDate, role.endDate) }}
             </time>
-            <p v-if="role.summary" class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+            <p
+              v-if="role.summary"
+              class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic"
+            >
               {{ role.summary }}
             </p>
             <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
@@ -64,10 +74,15 @@
               >Current</span
             >
           </h4>
-          <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time
+            class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+          >
             {{ formatPeriod(experience.roles[0].startDate, experience.roles[0].endDate) }}
           </time>
-          <p v-if="experience.roles[0].summary" class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic">
+          <p
+            v-if="experience.roles[0].summary"
+            class="mb-2 text-base font-normal text-gray-600 dark:text-gray-400 italic"
+          >
             {{ experience.roles[0].summary }}
           </p>
           <div class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
@@ -97,8 +112,12 @@
         return [...this.experiencesData].sort((a, b) => {
           // Get the most recent end date from all roles in each experience
           // If endDate is null, treat as "current" (very recent)
-          const aEndDates = a.roles.map(role => role.endDate ? this.parseDate(role.endDate).getTime() : Date.now());
-          const bEndDates = b.roles.map(role => role.endDate ? this.parseDate(role.endDate).getTime() : Date.now());
+          const aEndDates = a.roles.map((role) =>
+            role.endDate ? this.parseDate(role.endDate).getTime() : Date.now()
+          );
+          const bEndDates = b.roles.map((role) =>
+            role.endDate ? this.parseDate(role.endDate).getTime() : Date.now()
+          );
 
           const aMostRecentEnd = Math.max(...aEndDates);
           const bMostRecentEnd = Math.max(...bEndDates);
@@ -140,8 +159,18 @@
         const [year, month] = dateString.split("-");
         const date = new Date(parseInt(year), parseInt(month) - 1, 1);
         const monthNames = [
-          "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
         ];
         return `${monthNames[date.getMonth()]} ${year}`;
       },

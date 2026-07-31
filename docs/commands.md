@@ -1,6 +1,7 @@
 # Common Commands
 
 ## npm scripts (`package.json`)
+
 - `npm run dev` - start Nuxt dev server.
 - `npm run build` - production build.
 - `npm start` - serve production build.
@@ -13,9 +14,9 @@
 - `npm run validate` - run format check, lint, type-check.
 
 ## Make targets (`Makefile`)
+
 - `make setup` - `npm install`.
 - `make dev` - `npm run dev`.
 - `make lint` - format + validate.
 - `make build` - `npm run build`.
 - `make clean` - remove `node_modules`, `.nuxt`, `dist`, `.cache`.
-

@@ -8,4 +8,3 @@
 - `Makefile` - shortcut targets for setup, dev, lint, build, clean.
 - `package.json` - npm scripts and JS dependencies (Nuxt 2, Tailwind, @nuxt/content, ESLint/Prettier, TypeScript tools).
 - `pyproject.toml` / `tools/*.py` - Poetry-managed helpers for downloading/processing icons and favicons.
-

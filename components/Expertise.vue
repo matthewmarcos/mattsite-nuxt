@@ -1,55 +1,74 @@
 <template>
   <div class="mt-8">
-    <div class="mt-4">
-      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
+    <div class="mt-4 opacity-40">
+      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize line-through">
         Data and Analytics
       </h2>
-      <ul class="mb-6 flex flex-wrap gap-4">
-        <li class="flex items-center">
-          <Bigquery class="h-5 w-5"></Bigquery>
-        </li>
-        <li class="flex items-center">
-          <Python class="h-5 w-5"></Python>
-        </li>
-        <li class="flex items-center">
-          <Snowflake class="h-5 w-5"></Snowflake>
-        </li>
-        <li class="flex items-center">
-          <Airflow class="h-5 w-5"></Airflow>
-        </li>
-        <li class="flex items-center">
-          <Dagster class="h-5 w-5"></Dagster>
-        </li>
-        <li class="flex items-center">
-          <Postgres class="h-5 w-5"></Postgres>
-        </li>
-        <li class="flex items-center">
-          <Dbt class="h-5 w-5"></Dbt>
-        </li>
-      </ul>
+      <div class="relative inline-block mb-6">
+        <ul class="flex flex-wrap gap-4">
+          <li class="flex items-center">
+            <Bigquery class="h-5 w-5"></Bigquery>
+          </li>
+          <li class="flex items-center">
+            <Python class="h-5 w-5"></Python>
+          </li>
+          <li class="flex items-center">
+            <Snowflake class="h-5 w-5"></Snowflake>
+          </li>
+          <li class="flex items-center">
+            <Airflow class="h-5 w-5"></Airflow>
+          </li>
+          <li class="flex items-center">
+            <Postgres class="h-5 w-5"></Postgres>
+          </li>
+        </ul>
+        <span
+          aria-hidden="true"
+          class="absolute inset-x-0 top-1/2 h-px bg-gray-600 dark:bg-blue-200"
+        ></span>
+      </div>
     </div>
-    <div class="mt-2">
-      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize">
+
+    <div class="mt-2 opacity-40">
+      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200 capitalize line-through">
         Platforms and Tools
       </h2>
+      <div class="relative inline-block">
+        <ul class="flex flex-wrap gap-4 items-center">
+          <li class="flex items-center">
+            <Terraform class="h-5 w-5"></Terraform>
+          </li>
+          <li class="flex items-center">
+            <Kubernetes class="h-5 w-5"></Kubernetes>
+          </li>
+          <li class="flex items-center">
+            <Docker class="h-5 w-5"></Docker>
+          </li>
+          <li class="flex items-center">
+            <Gcp class="h-5 w-5"></Gcp>
+          </li>
+          <li class="flex items-center">
+            <Helm class="h-5 w-5"></Helm>
+          </li>
+        </ul>
+        <span
+          aria-hidden="true"
+          class="absolute inset-x-0 top-1/2 h-px bg-gray-600 dark:bg-blue-200"
+        ></span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="mb-2 text-xl text-gray-700 font-bold dark:text-blue-200">Current Stack</h2>
       <ul class="flex flex-wrap gap-4 items-center">
         <li class="flex items-center">
-          <Terraform class="h-5 w-5"></Terraform>
+          <Claude class="h-8 w-8"></Claude>
         </li>
         <li class="flex items-center">
-          <Kubernetes class="h-5 w-5"></Kubernetes>
+          <img :src="openai" alt="Codex" class="h-8 w-8" />
         </li>
         <li class="flex items-center">
-          <Docker class="h-5 w-5"></Docker>
-        </li>
-        <li class="flex items-center">
-          <CloudRun class="h-5 w-5"></CloudRun>
-        </li>
-        <li class="flex items-center">
-          <Gcs class="h-5 w-5"></Gcs>
-        </li>
-        <li class="flex items-center">
-          <Helm class="h-5 w-5"></Helm>
+          <img :src="gemini" alt="Gemini" class="h-8 w-8" />
         </li>
       </ul>
     </div>
@@ -61,15 +80,13 @@
   import Python from "../assets/tech_logos/python.svg?inline";
   import Snowflake from "../assets/tech_logos/snowflake.svg?inline";
   import Airflow from "../assets/tech_logos/airflow.svg?inline";
-  import Dagster from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dagster.svg
   import Postgres from "../assets/tech_logos/postgres.svg?inline";
-  import Dbt from "../assets/tech_logos/bigquery.svg?inline"; // Placeholder - replace with dbt.svg
   import Terraform from "../assets/tech_logos/terraform.svg?inline";
   import Kubernetes from "../assets/tech_logos/kubernetes.svg?inline";
   import Docker from "../assets/tech_logos/docker.svg?inline";
-  import CloudRun from "../assets/tech_logos/gcp.svg?inline"; // Placeholder - replace with cloud-run.svg
-  import Gcs from "../assets/tech_logos/gcp.svg?inline"; // Placeholder - replace with gcs.svg
+  import Gcp from "../assets/tech_logos/gcp.svg?inline";
   import Helm from "../assets/tech_logos/helm.svg?inline";
+  import Claude from "../assets/tech_logos/claude.svg?inline";
 
   export default {
     components: {
@@ -77,15 +94,19 @@
       Python,
       Snowflake,
       Airflow,
-      Dagster,
       Postgres,
-      Dbt,
       Terraform,
       Kubernetes,
       Docker,
-      CloudRun,
-      Gcs,
+      Gcp,
       Helm,
+      Claude,
+    },
+    data() {
+      return {
+        openai: require("../assets/tech_logos/openai.png"),
+        gemini: require("../assets/tech_logos/gemini.png"),
+      };
     },
   };
 </script>

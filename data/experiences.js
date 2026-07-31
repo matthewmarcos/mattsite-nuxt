@@ -4,8 +4,7 @@ const experiencesData = [
     company: "Rex Software",
     companyId: "rex-software",
     icon: require("~/assets/job_logos/rexsoftware_favicon.png"),
-    summary:
-      "Real estate software platform (agency CRM + property management) operating across the AU and UK markets.",
+    summary: "Real estate software for the AU and UK markets.",
     roles: [
       {
         title: "Senior Data and AI Engineer",
@@ -13,11 +12,8 @@ const experiencesData = [
         startDate: "2026-03",
         endDate: null,
         achievements: [
-          "Designed and shipped — solo, end-to-end — two production data-ingestion pipelines (AU + UK) for the property management platform: Dataflow Flex Templates → Snowflake Snowpipe (AUTO_INGEST via Pub/Sub) → dbt bronze layer. AU extracts 10 source databases in ~22 minutes; UK covers 182 entities with an 88M-row backfill completed in 85 minutes. Delivered 157 bronze dbt models across both regions.",
-          "Re-architected Jitsu's direct-to-Snowflake event ingestion to a GCS → Snowpipe AUTO_INGEST pattern, cutting idle warehouse spend and unlocking hourly (vs. daily) refresh cadence; propagated the reactive pattern across 4+ sources (GitHub, Slack, Google Sheets, Jira).",
-          "Built the company's PII-hashing infrastructure on Cloud Run (configurable hash/mask/keep action model, JSON-path support, scoped table discovery), producing DPIA and SOC-style audit evidence for compliance review.",
-          "Shipped 3 production dashboards solo end-to-end (engineering DORA metrics, application performance, and an operational property-platform V1) — each from scraper/pipeline through gold marts, dbt models, Plotly app, and deploy.",
-          "Delivered across four parallel workstreams while several were gated on external DevOps dependencies; rated 4.79/5 (Exceptional) at the 3rd-month client review.",
+          "Built the ingestion platform for the property management product end to end, across both regions.",
+          "Also built the company's PII-hashing service and a handful of dashboards nobody else wanted to own.",
         ],
       },
     ],
@@ -27,7 +23,7 @@ const experiencesData = [
     company: "Zoomo",
     companyId: "zoomo",
     icon: require("~/assets/job_logos/ridezoomo_favicon.png"),
-    summary: "E-bike subscription platform operating across 7 international markets (AU, UK, DE, FR, ES, US, CA).",
+    summary: "E-bike subscriptions, operating across seven countries.",
     roles: [
       {
         title: "Sr. Data Engineer",
@@ -35,11 +31,8 @@ const experiencesData = [
         startDate: "2023-12",
         endDate: "2025-12",
         achievements: [
-          "Reduced BigQuery storage costs 50% ($120K → $60K annually) through archiving system moving infrequently-accessed data to GCS Coldline with unarchiving capabilities; established cross-team process for dataset retention management.",
-          "Led company-wide dbt implementation: migrated 40+ critical models, established Git workflows and CI/CD pipelines (GitHub Actions), implemented 150+ automated tests, deployed self-hosted documentation site; includes change management and internal training workshops.",
-          "Reduced transformation runtime of master tables by 88% (4 hours → 45 minutes) by resolving dependency management issues and establishing unified 30-minute refresh cadence.",
-          "Created automated arrears management system handling 50-100+ cases for each of 7 markets, reducing manual workload and lowering latency of payment-to-unlock workflow (<5 minutes vs. ~1 day).",
-          "Executed zero-downtime fleet management system migration affecting 100% of operational dashboards (60,000+ assets, 80,000 jobs) across 7 markets; rebuilt analytics master tables to use new system.",
+          "Pitched dbt as the fix for a company-wide data freshness problem, then did the migration and taught everyone how to use it.",
+          "Spent a lot of time making things cheaper and faster, and migrating the fleet system without taking dashboards down.",
         ],
       },
     ],
@@ -49,7 +42,7 @@ const experiencesData = [
     company: "Openpay (Project)",
     companyId: "openpay",
     icon: require("~/assets/job_logos/getopenpay_favicon.png"),
-    summary: "Early-stage subscription management platform (later acquired by Airwallex).",
+    summary: "Early-stage subscription billing, later acquired by Airwallex.",
     roles: [
       {
         title: "Sr. Software Engineer",
@@ -57,7 +50,7 @@ const experiencesData = [
         startDate: "2024-06",
         endDate: "2024-09",
         achievements: [
-          "Built dunning system processing $100,000 USD daily across 10,000+ active subscriptions with email notifications from scratch.",
+          "Built their dunning system from scratch — the thing that chases failed payments without annoying customers too much.",
         ],
       },
     ],
@@ -67,6 +60,7 @@ const experiencesData = [
     company: "Thinking Machines Data Science Inc.",
     companyId: "thinking-machines",
     icon: require("~/assets/job_logos/thinkingmachin_es_favicon.png"),
+    summary: "Data consultancy in Southeast Asia.",
     roles: [
       {
         title: "Telco Industry Pod Lead",
@@ -74,7 +68,7 @@ const experiencesData = [
         startDate: "2023-01",
         endDate: "2023-11",
         achievements: [
-          "Led Telco vertical business development and technical solution sales, managing client relationships to expand telecommunications portfolio in Southeast Asia.",
+          "Ran the telco vertical — client relationships, solution design, and the sales conversations that come with it.",
         ],
       },
       {
@@ -83,10 +77,8 @@ const experiencesData = [
         startDate: "2020-12",
         endDate: "2023-11",
         achievements: [
-          "Built an internal Data Marketplace processing 40 datasets (2TB daily), eliminating duplicate purchases for $320B+ investment firm.",
-          "Coordinated 40+ engineers across 5+ teams as de-facto platform owner while coding daily (Python, Airflow, dbt).",
-          "Designed enterprise data platform architectures from business requirements through technical proposals: participated in pre-sales meetings, authored TCO calculations and build timelines, identified technical risks, then led implementation across multi-cloud environments. (Snowflake, Airflow, AWS/GCP, BigQuery, dbt).",
-          "Created company-wide playbooks: S2S VPN configs, security checklists, TCO calculators; authored RFCs for sales→dev handover.",
+          "Built an internal data marketplace for a very large investment firm, and ended up as its de-facto platform owner.",
+          "Designed data platforms for clients from first conversation through to implementation, which meant writing a lot of proposals and then having to deliver on them.",
         ],
       },
       {
@@ -95,8 +87,7 @@ const experiencesData = [
         startDate: "2020-06",
         endDate: "2020-12",
         achievements: [
-          "Won $1M USD quarterly contract with $320B+ investment firm through corporate hackathon POC.",
-          "Built geospatial dashboard for environmental risk assessment as solo data engineer.",
+          "Won a large client contract off the back of a hackathon prototype, then built the geospatial dashboard it turned into.",
         ],
       },
     ],
@@ -105,7 +96,8 @@ const experiencesData = [
     type: "work",
     company: "Station Five",
     companyId: "station-five",
-    icon: require("~/assets/job_logos/adaca_favicon.svg"),
+    icon: require("~/assets/job_logos/stationfive_logo.svg"),
+    summary: "Web agency work for international clients.",
     roles: [
       {
         title: "Software Developer",
@@ -113,10 +105,8 @@ const experiencesData = [
         startDate: "2018-10",
         endDate: "2020-04",
         achievements: [
-          "Developed and maintained web applications for international clients across various technologies, demonstrating adaptability and rapid learning ability.",
-          "Rescued Queensland Fire and Emergency Services website project by catching up on 7-month backlog in 2 months while learning Drupal (no prior PHP background).",
-          "Participated in strategic client meetings, authored technical approach sections of proposals, and co-handled project costing processes.",
-          "Rapidly learned multiple frameworks (Drupal, Magento 2, .NET Core) to deliver client projects across e-commerce, government, and enterprise domains.",
+          "Learned whichever framework the next client needed — Drupal, Magento, .NET — usually about a week before I needed it.",
+          "Rescued a government website project that had fallen badly behind, having never written PHP before.",
         ],
       },
     ],
@@ -133,7 +123,7 @@ const experiencesData = [
         startDate: "2017-08",
         endDate: "2018-04",
         achievements: [
-          "Overhauled email metrics data pipeline reducing ETL runtime from 2 hours to 15 minutes (87% improvement) by eliminating N+1 queries; improved tooling for data scientists and project managers (Technologies: Python, Redshift, Go, Node).",
+          "Rewrote the email metrics pipeline so the data scientists stopped waiting hours for it.",
         ],
       },
     ],

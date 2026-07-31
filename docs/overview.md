@@ -3,6 +3,7 @@
 Short guide to how the Nuxt 2 blog in this repo is organized.
 
 ## Directory map (high-level)
+
 - `assets/` - global styles (`css/main.css`), images, tech logos, icons.
 - `components/` - shared Vue components (cards, header/footer, timeline, blog item).
 - `content/` - markdown blog posts consumed by `@nuxt/content`.
@@ -16,6 +17,7 @@ Short guide to how the Nuxt 2 blog in this repo is organized.
 - Root configs: `nuxt.config.js`, `tailwind.config.js`, `.eslintrc.js`, `.prettierrc`, `tsconfig.json`, `netlify.toml`.
 
 ## Page entry points
+
 - Home: `pages/index.vue`
 - Projects: `pages/projects.vue`
 - Blog list: `pages/blog/index.vue`
@@ -25,5 +27,5 @@ Short guide to how the Nuxt 2 blog in this repo is organized.
 - Prism syntax highlighting: `plugins/prism.js`
 
 ## Routing note
-`nuxt.config.js` currently filters out routes starting with `/blog` in `router.extendRoutes` to temporarily disable blog pages. Remove that filter to re-enable blog routes.
 
+`nuxt.config.js` currently filters out routes starting with `/blog` in `router.extendRoutes` to temporarily disable blog pages. Remove that filter to re-enable blog routes.
