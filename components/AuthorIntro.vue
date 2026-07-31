@@ -5,11 +5,11 @@
       v-typed.showCursor="{ typeSpeed: 100 }"
       class="mt-6 text-4xl text-gray-700 font-bold dark:text-blue-200"
     >
-      <span>Senior Data Engineer</span><br />
+      <span>Senior Data and AI Engineer</span><br />
     </h2>
     <div class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify space-y-4">
       <p>
-        Senior Data Engineer with 8 years of experience designing and building scalable data platforms
+        Senior Data and AI Engineer with 8 years of experience designing and building scalable data platforms
         in consulting environments and product companies. I specialize in cost optimization, system
         migrations, and platform modernization initiatives.
       </p>

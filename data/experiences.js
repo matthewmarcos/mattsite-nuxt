@@ -1,6 +1,29 @@
 const experiencesData = [
   {
     type: "work",
+    company: "Rex Software",
+    companyId: "rex-software",
+    icon: require("~/assets/job_logos/rexsoftware_favicon.png"),
+    summary:
+      "Real estate software platform (agency CRM + property management) operating across the AU and UK markets.",
+    roles: [
+      {
+        title: "Senior Data and AI Engineer",
+        isCurrent: true,
+        startDate: "2026-03",
+        endDate: null,
+        achievements: [
+          "Designed and shipped — solo, end-to-end — two production data-ingestion pipelines (AU + UK) for the property management platform: Dataflow Flex Templates → Snowflake Snowpipe (AUTO_INGEST via Pub/Sub) → dbt bronze layer. AU extracts 10 source databases in ~22 minutes; UK covers 182 entities with an 88M-row backfill completed in 85 minutes. Delivered 157 bronze dbt models across both regions.",
+          "Re-architected Jitsu's direct-to-Snowflake event ingestion to a GCS → Snowpipe AUTO_INGEST pattern, cutting idle warehouse spend and unlocking hourly (vs. daily) refresh cadence; propagated the reactive pattern across 4+ sources (GitHub, Slack, Google Sheets, Jira).",
+          "Built the company's PII-hashing infrastructure on Cloud Run (configurable hash/mask/keep action model, JSON-path support, scoped table discovery), producing DPIA and SOC-style audit evidence for compliance review.",
+          "Shipped 3 production dashboards solo end-to-end (engineering DORA metrics, application performance, and an operational property-platform V1) — each from scraper/pipeline through gold marts, dbt models, Plotly app, and deploy.",
+          "Delivered across four parallel workstreams while several were gated on external DevOps dependencies; rated 4.79/5 (Exceptional) at the 3rd-month client review.",
+        ],
+      },
+    ],
+  },
+  {
+    type: "work",
     company: "Zoomo",
     companyId: "zoomo",
     icon: require("~/assets/job_logos/ridezoomo_favicon.png"),

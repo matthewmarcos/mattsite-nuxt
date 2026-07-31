@@ -2,7 +2,7 @@ const siteMetadata = {
   title: "Matthew Marcos | Data, Web and Solutions Engineering",
   author: "Matthew Marcos",
   author_image: "/author.jpeg",
-  position: "Senior Data Engineer @ Zoomo",
+  position: "Senior Data and AI Engineer @ Rex Software",
   location: "Manila, Philippines",
   headerTitle: "M. Marcos",
   slogan: "Innovating with Insight, Leading with Impact",
