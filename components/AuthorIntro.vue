@@ -9,9 +9,8 @@
     </h2>
     <div class="mt-8 mb-4 dark:bg-gray-800 dark:text-blue-200 text-justify space-y-4">
       <p>
-        I build data platforms — pipelines, warehouses, and the unglamorous plumbing underneath
-        them. Lately most of that work runs through AI tooling, which is what I'll be writing about
-        here.
+        I spent most of my career building data platforms. These days I build systems and internal
+        tools with AI — which is what I'll be writing about here.
       </p>
     </div>
   </div>
